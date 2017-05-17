@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable name= "dataSource" type="com.example.franz_dpc.fhf_salarybreakup.DataSource" />
+        <variable name= "item" type="com.example.franz_dpc.fhf_salarybreakup.Item" />
+    </data>
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@android:color/holo_orange_dark"
+    android:useDefaultMargins="true"
+    android:rowCount="2" android:columnCount="2">
+
+
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:text="Show up History"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:text="@{dataSource.title}"
+        android:textColor="@android:color/white" />
+
+    <ListView
+        android:id="@+id/viewHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="1">
+
+
+    </ListView>
+    </GridLayout>
+</layout>
