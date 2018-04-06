@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         // Navigate to history activity
         // define target activity
-
+        //  TODO: This is not working on the lates version  6/4/2018
         switch (v.getId()) {
             case R.id.btn_go_history_activity: {
                 Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
